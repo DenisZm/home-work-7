@@ -1,6 +1,8 @@
 package ex567;
 
 /**
+ * Print formatted human info.
+ *
  * Created by Denis on 24.11.2016.
  */
 public class HumanInfo {

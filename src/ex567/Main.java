@@ -6,6 +6,9 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 /**
+ * Main program.
+ * Store human info. Show file content.
+ * Delete records by ID.
  * Created by Denis on 25.11.2016.
  */
 public class Main {

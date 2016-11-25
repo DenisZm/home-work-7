@@ -1,6 +1,8 @@
 package ex567;
 
 /**
+ * Human object - only store info.
+ *
  * Created by Denis on 24.11.2016.
  */
 public class Human {

@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
+ * File IO operations.
+ * Use ArrayList to read and overwrite file.
+ *
  * Created by Denis on 24.11.2016.
  */
 public class HumanFileIO {
@@ -14,6 +17,7 @@ public class HumanFileIO {
         this.humans = humans;
     }
 
+    // Read string from file, parse by delimiter "|"
     public void read(File file) {
         String inputString;
         try (FileInputStream inputStream = new FileInputStream(file)) {
@@ -35,6 +39,7 @@ public class HumanFileIO {
         }
     }
 
+    // Write storage array to file
     public void write(File file) {
         StringBuilder out;
         try {
