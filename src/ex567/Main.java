@@ -109,14 +109,14 @@ public class Main {
         while (true) {
                 n = getIntFromUser("");
                 if (n < start || n > end) {
-                    sayOutOfRangeoutor(start, end);
+                    sayOutOfRangeError(start, end);
                 } else {
                     return n;
                 }
         }
     }
 
-    static void sayOutOfRangeoutor(int start, int end) {
+    static void sayOutOfRangeError(int start, int end) {
         if (start == end) {
             System.out.printf("Only %d allowed\n", start);
         } else {
