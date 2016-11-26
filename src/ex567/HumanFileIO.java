@@ -53,14 +53,14 @@ public class HumanFileIO {
                 out = new StringBuilder();
                 out.append(humans.get(i).getFirstName()).append("|")
                         .append(humans.get(i).getLastName()).append("|")
-                        .append(humans.get(i).getAge()).append("\n");
+                        .append(humans.get(i).getAge()).append("\r\n");
 
 
                 outputStream.write(String.valueOf(out).getBytes());
             }
 
         } catch (FileNotFoundException e) {
-            e.printStackTrace();
+            System.out.println("File not found");
         } catch (IOException e) {
             e.printStackTrace();
         }
