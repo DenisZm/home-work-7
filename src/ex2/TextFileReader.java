@@ -25,7 +25,7 @@ public class TextFileReader {
                 allText.append(scanner.nextLine()).append("\n");
             }
         } catch (FileNotFoundException e) {
-            System.out.println("File not found");
+            throw new IllegalStateException("File not found");
         }
         return String.valueOf(allText);
     }

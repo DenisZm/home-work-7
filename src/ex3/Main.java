@@ -10,25 +10,21 @@ public class Main {
     public static void main(String[] args) {
         Human human = new Human();
 
-        human.setFirstName(getStringFromUser(
-                String.format("%-14s", "First name:")));
-        human.setLastName(getStringFromUser(
-                String.format("%-14s", "Last name:")));
-        human.setPhoneNumber(getStringFromUser(
-                String.format("%-14s", "Phone number:")));
-        human.setAddress(getStringFromUser(
-                String.format("%-14s", "Address:")));
+        System.out.print(String.format("%-14s", "First name:"));
+        human.setFirstName(getStringFromUser());
+        System.out.print(String.format("%-14s", "Last name:"));
+        human.setLastName(getStringFromUser());
+        System.out.print(String.format("%-14s", "Phone number:"));
+        human.setPhoneNumber(getStringFromUser());
+        System.out.print(String.format("%-14s", "Address:"));
+        human.setAddress(getStringFromUser());
 
         System.out.println();
-        HumanInfo info = new HumanInfo(human);
-        info.printName();
-        info.printPhone();
-        info.printAddress();
+        System.out.println(human);
     }
 
-    private static String getStringFromUser(String prompt) {
+    private static String getStringFromUser() {
         while (true) {
-            System.out.print(prompt);
             try {
                 Scanner in = new Scanner(System.in);
                 return in.nextLine();
