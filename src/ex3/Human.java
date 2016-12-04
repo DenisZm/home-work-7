@@ -40,4 +40,9 @@ public class Human {
     public String getAddress() {
         return address;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Name: %s %s, telephone number: %s, address: %s", firstName, lastName, phoneNumber, address);
+    }
 }

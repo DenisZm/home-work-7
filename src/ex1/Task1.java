@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Task1 {
     public static void main(String[] args) throws IOException {
-        File file = new File("C:/Work/test-java.txt");
+        File file = new File("D:/test-java.txt");
         file.createNewFile();
 
         FileOutputStream outputStream = new FileOutputStream(file);
